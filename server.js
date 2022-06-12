@@ -5,17 +5,18 @@ const data = require('./data/adidas_shoes.json')
 const app = express()
 const port = 3000
 
-// app.use(express.static(path.resolve(__dirname, 'public')));
-app.use(express.static(path.resolve(__dirname, 'node_modules/bootswatch/dist/morph')));
+app.set('view engine', 'ejs');
+app.use(express.static(path.resolve(__dirname, 'node_modules/bootswatch/dist/cyborg')));
+app.use(express.static(path.resolve(__dirname, 'images')));
 
 app.get('/', (_req, res) => {
-	res.sendFile(path.join(__dirname, '/index.html'));
+	res.render('pages/index', {'data': data});
 })
 
 app.get('/data', (_req, res) => {
-	res.json(data)
+	res.json(data);
 })
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
+  console.log(`Example app listening on port ${port}`);
 })
