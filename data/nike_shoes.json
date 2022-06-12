@@ -1,0 +1,597 @@
+[
+    {
+        "brand": "nike",
+        "name": "Nike React Infinity Run Flyknit 3",
+        "price": "$160",
+        "img_url": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/7e4edf23-0fe1-4935-aac9-7f68f81b0cdf/react-infinity-run-flyknit-3-mens-road-running-shoes-wsZqCb.png",
+        "page_url": "https://www.nike.com/t/react-infinity-run-flyknit-3-mens-road-running-shoes-wsZqCb/DH5392-001"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike ZoomX Invincible Run Flyknit",
+        "price": "$180",
+        "img_url": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/d095d2f6-0455-49a5-8e05-3679fa78e683/zoomx-invincible-run-flyknit-mens-road-running-shoes-sP2zk7.png",
+        "page_url": "https://www.nike.com/t/zoomx-invincible-run-flyknit-mens-road-running-shoes-sP2zk7/CT2228-103"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike Air Zoom Pegasus 38",
+        "price": "$120",
+        "img_url": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/28d60e46-29e3-4fc2-bcd3-d5b466a07308/air-zoom-pegasus-38-mens-road-running-shoes-lq7PZZ.png",
+        "page_url": "https://www.nike.com/t/air-zoom-pegasus-38-mens-road-running-shoes-lq7PZZ/CW7356-700"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike React Pegasus Trail 4",
+        "price": "$140",
+        "img_url": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/aa9405af-b1e4-4179-8579-2a651b67dfc7/react-pegasus-trail-4-mens-trail-running-shoes-Fqc7qj.png",
+        "page_url": "https://www.nike.com/t/react-pegasus-trail-4-mens-trail-running-shoes-Fqc7qj/DJ6158-002"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike Air Zoom Terra Kiger 8",
+        "price": "$140",
+        "img_url": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/6878e833-8c94-4eec-8e7a-f67bad0f314e/air-zoom-terra-kiger-8-mens-trail-running-shoes-BnbV2t.png",
+        "page_url": "https://www.nike.com/t/air-zoom-terra-kiger-8-mens-trail-running-shoes-BnbV2t/DH0649-002"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike Wildhorse 7",
+        "price": "$130",
+        "img_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "page_url": "https://www.nike.com/t/wildhorse-7-mens-trail-running-shoes-rJ6R7V/CZ1856-004"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike React Phantom Run Flyknit 2",
+        "price": "$140",
+        "img_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "page_url": "https://www.nike.com/t/react-phantom-run-flyknit-2-mens-road-running-shoes-7s5XTG/DV2139-100"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike Air Zoom Vomero 16",
+        "price": "$150",
+        "img_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "page_url": "https://www.nike.com/t/air-zoom-vomero-16-mens-running-shoes-8zSBBk/DR9878-100"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike Free Run 5.0",
+        "price": "$100",
+        "img_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "page_url": "https://www.nike.com/t/free-run-5-mens-road-running-shoes-mL8SDd/CZ1884-009"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike Revolution 6 Next Nature",
+        "price": "$65",
+        "img_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "page_url": "https://www.nike.com/t/revolution-6-next-nature-mens-road-running-shoes-XcXMbX/DC3728-004"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike Air Zoom Alphafly NEXT% Flyknit",
+        "price": "$275",
+        "img_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "page_url": "https://www.nike.com/t/air-zoom-alphafly-next-flyknit-mens-road-racing-shoes-fNntgL/CI9925-501"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike ZoomX Vaporfly Next% 2",
+        "price": "$250",
+        "img_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "page_url": "https://www.nike.com/t/zoomx-vaporfly-next-2-mens-road-racing-shoes-glWqfm/CU4111-002"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike Pegasus Trail 3 GORE-TEX",
+        "price": "$160",
+        "img_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "page_url": "https://www.nike.com/t/pegasus-trail-3-gore-tex-mens-running-shoes-HG005k/DR0137-200"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike Pegasus Trail 3",
+        "price": "$130",
+        "img_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "page_url": "https://www.nike.com/t/pegasus-trail-3-mens-trail-running-shoes-QPcRqp/DA8697-400"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike Air Zoom Pegasus 39",
+        "price": "$130",
+        "img_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "page_url": "https://www.nike.com/t/air-zoom-pegasus-39-mens-road-running-shoes-d4dvtm/DH4071-003"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike React Miler 3",
+        "price": "$120",
+        "img_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "page_url": "https://www.nike.com/t/react-miler-3-mens-road-running-shoes-WCgcxj/DD0490-100"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike Zoom Fly 4",
+        "price": "$160",
+        "img_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "page_url": "https://www.nike.com/t/zoom-fly-4-mens-road-running-shoes-dw6jzQ/CT2392-004"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike Zoom Alphafly Next Nature",
+        "price": "$350",
+        "img_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "page_url": "https://www.nike.com/t/zoom-alphafly-next-nature-road-racing-shoes-WnMHmS/DB0129-001"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike Winflo 8",
+        "price": "$90",
+        "img_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "page_url": "https://www.nike.com/t/wio-8-mens-road-running-shoes-vKc7d1/CW3419-004"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike Quest 5",
+        "price": "$80",
+        "img_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "page_url": "https://www.nike.com/t/quest-5-mens-road-running-shoes-1tmPXN/DD0204-001"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike Downshifter 12",
+        "price": "$70",
+        "img_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "page_url": "https://www.nike.com/t/downshifter-12-mens-road-running-shoes-vZDS85/DD9293-400"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike Air Zoom Structure 24",
+        "price": "$130",
+        "img_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "page_url": "https://www.nike.com/t/air-zoom-structure-24-mens-running-shoes-W9Q4jg/DR9879-100"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike Renew Ride 3",
+        "price": "$75",
+        "img_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "page_url": "https://www.nike.com/t/renew-ride-3-mens-road-running-shoes-7hTSLw/DC8185-400"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike Air Zoom Tempo NEXT%",
+        "price": "$200",
+        "img_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "page_url": "https://www.nike.com/t/air-zoom-tempo-next-mens-road-running-shoes-HMLvjm/CI9923-104"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike Zoom Prevail",
+        "price": "$100",
+        "img_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "page_url": "https://www.nike.com/t/zoom-prevail-mens-running-shoes-BhMfQC/DR9881-100"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike Zoom Span 4",
+        "price": "$80",
+        "img_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "page_url": "https://www.nike.com/t/zoom-span-4-mens-road-running-shoes-Tb0d0g/DC8996-003"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike Quest 4",
+        "price": "$75",
+        "img_url": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/47d31251-6d77-4e80-bfee-30d30988a81f/quest-4-mens-road-running-shoes-RlpLvS.png",
+        "page_url": "https://www.nike.com/t/quest-4-mens-road-running-shoes-RlpLvS/DA1105-007"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike Air Zoom Pegasus 37",
+        "price": "$94.97",
+        "img_url": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/259a7f28-f7bc-4376-918d-f9ad20fbe81f/air-zoom-pegasus-37-mens-road-running-shoes-KLvDcj.png",
+        "page_url": "https://www.nike.com/t/air-zoom-pegasus-37-mens-road-running-shoes-KLvDcj/BQ9646-010"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike Air Zoom Pegasus 36",
+        "price": "$104.97",
+        "img_url": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/cetmis0ph0yfyr93v83h/air-zoom-pegasus-36-mens-running-shoes-D24Mcz.png",
+        "page_url": "https://www.nike.com/t/air-zoom-pegasus-36-mens-running-shoes-D24Mcz/AQ2203-002"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike Flex Experience Run 11 Next Nature",
+        "price": "$65",
+        "img_url": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/b6d9a2f2-5d16-4b6e-a4aa-2e5f579fde3d/flex-experience-run-11-next-nature-mens-road-running-shoes-ZlDZ8m.png",
+        "page_url": "https://www.nike.com/t/flex-experience-run-11-next-nature-mens-road-running-shoes-ZlDZ8m/DD9284-005"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike Run Swift 2",
+        "price": "$70",
+        "img_url": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/a5609814-9b81-4f5c-8345-bea2bea90c15/run-swift-2-mens-road-running-shoes-MJRLlz.png",
+        "page_url": "https://www.nike.com/t/run-swift-2-mens-road-running-shoes-MJRLlz/CU3517-008"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike Juniper Trail",
+        "price": "$70",
+        "img_url": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/ec33257a-9af5-440e-93b9-bd9bed9e286f/juniper-trail-mens-trail-running-shoes-MCKdXS.png",
+        "page_url": "https://www.nike.com/t/juniper-trail-mens-trail-running-shoes-MCKdXS/CW3808-001"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike Winflo 8 Shield",
+        "price": "$100",
+        "img_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "page_url": "https://www.nike.com/t/wio-8-shield-mens-weatherized-road-running-shoes-qxXXKS/DC3727-200"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike Air Zoom Terra Kiger 7",
+        "price": "$124.97",
+        "img_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "page_url": "https://www.nike.com/t/air-zoom-terra-kiger-7-mens-trail-running-shoes-9tC16Z/CW6062-002"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike Downshifter 11",
+        "price": "$44.97",
+        "img_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "page_url": "https://www.nike.com/t/downshifter-11-mens-road-running-shoes-thl4DS/CW3411-402"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike ZoomX Streakfly",
+        "price": "$160",
+        "img_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "page_url": "https://www.nike.com/t/zoomx-streakfly-road-racing-shoes-X7hwQG/DJ6566-100"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike Free RN Flyknit 2018",
+        "price": "$90.97",
+        "img_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "page_url": "https://www.nike.com/t/free-rn-flyknit-2018-mens-running-shoes-RRT9elMk/942838-001"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike Free RN 2018",
+        "price": "$88.97",
+        "img_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "page_url": "https://www.nike.com/t/free-rn-2018-mens-running-shoe-4VTnGqeZ/942836-003"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike Air Zoom Pegasus 38 FlyEase",
+        "price": "$120",
+        "img_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "page_url": "https://www.nike.com/t/air-zoom-pegasus-38-flyease-mens-easy-on-off-road-running-shoes-H16QG5/DA6674-001"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike Revolution 6 FlyEase Next Nature",
+        "price": "$65",
+        "img_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "page_url": "https://www.nike.com/t/revolution-6-flyease-next-nature-mens-easy-on-off-road-running-shoes-0fm7Ds/DC8992-002"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike Air Zoom Pegasus 38 (NFL Seattle Seahawks)",
+        "price": "$95",
+        "img_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "page_url": "https://www.nike.com/t/air-zoom-pegasus-38-seattle-seahawks-mens-running-shoe-QpXfdj/DJ0854-001"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike Air Zoom Pegasus 38 (NFL Kansas City Chiefs)",
+        "price": "$95",
+        "img_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "page_url": "https://www.nike.com/t/air-zoom-pegasus-38-kansas-city-chiefs-mens-running-shoe-884pG1/DJ0818-001"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike Renew Run 2",
+        "price": "$58.97",
+        "img_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "page_url": "https://www.nike.com/t/renew-run-2-mens-road-running-shoe-8WSLZf/CU3504-005"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike Air Zoom Pegasus 37 Shield",
+        "price": "$130",
+        "img_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "page_url": "https://www.nike.com/t/air-zoom-pegasus-37-shield-mens-running-shoes-B2DGpk/CQ7935-002"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike Downshifter 12",
+        "price": "$70",
+        "img_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "page_url": "https://www.nike.com/t/downshifter-12-mens-road-running-shoes-extra-wide-hnRmTP/DM0919-001"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike React Miler 2 Shield",
+        "price": "$94.97",
+        "img_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "page_url": "https://www.nike.com/t/react-miler-2-shield-mens-weatherized-road-running-shoes-NRzZvt/DC4064-003"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike React Miler 2",
+        "price": "$130",
+        "img_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "page_url": "https://www.nike.com/t/react-miler-2-mens-road-running-shoes-3PDZdP/CW7121-005"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike Air Zoom Pegasus FlyEase By You",
+        "price": "$150",
+        "img_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "page_url": "https://www.nike.com/u/custom-nike-air-zoom-pegasus-flyease-by-you-10001268/3288335328"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike Air Zoom Pegasus 39 By You",
+        "price": "$150",
+        "img_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "page_url": "https://www.nike.com/u/custom-nike-air-zoom-pegasus-39-by-you-10001266/4605207873"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike Air Zoom Pegasus 39 By Bretman Rock",
+        "price": "$150",
+        "img_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "page_url": "https://www.nike.com/u/custom-nike-air-zoom-pegasus-39-by-you-10001316/8015129761"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike Air Zoom Maxfly More Uptempo",
+        "price": "$180",
+        "img_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "page_url": "https://www.nike.com/t/air-zoom-maxfly-more-uptempo-track-field-sprinting-spikes-Zbz0Wk/DN6948-111"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike Flex Experience Run 10",
+        "price": "$44.97",
+        "img_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "page_url": "https://www.nike.com/t/flex-experience-run-10-mens-road-running-shoes-BNSNRc/CI9960-002"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike Revolution 5",
+        "price": "$44.97",
+        "img_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "page_url": "https://www.nike.com/t/revolution-5-mens-road-running-shoes-ZXqS6C/BQ3204-002"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike Air Zoom Winflo 7",
+        "price": "$74.97",
+        "img_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "page_url": "https://www.nike.com/t/air-zoom-wio-7-mens-road-running-shoes-810FRg/CJ0291-003"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike React Infinity Run Flyknit 2",
+        "price": "$124.97",
+        "img_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "page_url": "https://www.nike.com/t/react-infinity-run-flyknit-2-mens-road-running-shoes-DttDF2/CT2357-006"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike ZoomX Dragonfly Bowerman Track Club",
+        "price": "$150",
+        "img_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "page_url": "https://www.nike.com/t/zoomx-dragoy-bowerman-track-club-track-field-distance-spikes-0P9jtc/DN4860-600"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike Air Zoom Tempo NEXT% FlyEase",
+        "price": "$200",
+        "img_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "page_url": "https://www.nike.com/t/air-zoom-tempo-next-flyease-mens-easy-on-off-road-running-shoes-jrvsrL/CV1889-005"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike ZoomX Vaporfly NEXT% 2 By You",
+        "price": "$255",
+        "img_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "page_url": "https://www.nike.com/u/custom-nike-vaporfly-next-2-by-you-10001311/4585015187"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike College Air Zoom Pegasus 38 (Michigan State)",
+        "price": "$94.97",
+        "img_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "page_url": "https://www.nike.com/t/air-zoom-pegasus-38-michigan-state-running-shoe-6T1Nn3/DJ0833-001"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike Flex Experience Run 11",
+        "price": "$65",
+        "img_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "page_url": "https://www.nike.com/t/flex-experience-run-11-womens-running-shoes-extra-wide-vFPVxD/DH5753-001"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike Flex Run 2021",
+        "price": "$80",
+        "img_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "page_url": "https://www.nike.com/t/flex-run-2021-mens-road-running-shoes-M8SZXP/CW3408-002"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike ZoomX Vaporfly NEXT% 2 By You",
+        "price": "$255",
+        "img_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "page_url": "https://www.nike.com/u/custom-nike-vaporfly-next-2-by-you-10001100/5126411576"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike Zoom Rival D 10",
+        "price": "$54.97",
+        "img_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "page_url": "https://www.nike.com/t/zoom-rival-d-10-track-field-distance-spikes-vGJlzz/907566-406"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike Zoom Rival S 9",
+        "price": "$65",
+        "img_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "page_url": "https://www.nike.com/t/zoom-rival-s-9-track-field-sprinting-spikes-ZwTJlgk3/907564-005"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike React Infinity Run Flyknit 3 By You",
+        "price": "$180",
+        "img_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "page_url": "https://www.nike.com/u/custom-nike-react-infinity-run-3-by-you-10001240/9991850580"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike React Miler",
+        "price": "$80.97",
+        "img_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "page_url": "https://www.nike.com/t/react-miler-mens-road-running-shoes-DgF6nr/CW1777-100"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike Pole Vault Elite",
+        "price": "$94.97",
+        "img_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "page_url": "https://www.nike.com/t/pole-vault-elite-track-field-jumping-spikes-z6w0XQ/AA1204-700"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike Zoom Superfly Elite 2",
+        "price": "$150",
+        "img_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "page_url": "https://www.nike.com/t/zoom-superfly-elite-2-track-field-sprinting-spikes-dqWkz6/CD4382-700"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike Zoom Rival XC 5",
+        "price": "$44.97",
+        "img_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "page_url": "https://www.nike.com/t/zoom-rival-xc-5-track-field-distance-spikes-HR9ZQT/CZ1795-102"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike Air Zoom Maxfly",
+        "price": "$154.97",
+        "img_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "page_url": "https://www.nike.com/t/air-zoom-maxfly-track-field-sprinting-spikes-C2ZBRP/DJ5261-100"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike High Jump Elite",
+        "price": "$125",
+        "img_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "page_url": "https://www.nike.com/t/high-jump-elite-track-field-jumping-spikes-AKTd9Aq3/806561-700"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike Zoom Victory Waffle 5",
+        "price": "$74.97",
+        "img_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "page_url": "https://www.nike.com/t/zoom-victory-waffle-5-track-field-distance-spikes-X6j0jx/AJ0846-102"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike Zoom Ja Fly 3",
+        "price": "$125",
+        "img_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "page_url": "https://www.nike.com/t/zoom-ja-fly-3-track-field-sprinting-spikes-WyTAmPOG/865633-700"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike Zoom Rival Waffle 5",
+        "price": "$44.97",
+        "img_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "page_url": "https://www.nike.com/t/zoom-rival-waffle-5-track-field-distance-spikes-TpwN53/CZ1804-701"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike Zoom Mamba V",
+        "price": "$104.97",
+        "img_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "page_url": "https://www.nike.com/t/zoom-mamba-v-track-field-distance-spikes-f2G84m/AJ1697-700"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike Pegasus Trail 2",
+        "price": "$114.97",
+        "img_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "page_url": "https://www.nike.com/t/pegasus-trail-2-mens-trail-running-shoe-JKj6Bj/CK4305-700"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike Air Zoom Victory More Uptempo",
+        "price": "$180",
+        "img_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "page_url": "https://www.nike.com/t/air-zoom-victory-more-uptempo-track-field-distance-spikes-xgJm79/DN6947-111"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike Triple Jump Elite 2",
+        "price": "$125",
+        "img_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "page_url": "https://www.nike.com/t/triple-jump-elite-2-track-field-jumping-spikes-BHj0G8/AO0808-700"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike Zoom Rival M 9",
+        "price": "$65",
+        "img_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "page_url": "https://www.nike.com/t/zoom-rival-m-9-track-field-multi-event-spikes-mCJ29r/AH1020-700"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike Air Zoom Victory",
+        "price": "$144.97",
+        "img_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "page_url": "https://www.nike.com/t/air-zoom-victory-track-field-distance-spikes-Q21pf3/CD4385-700"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike Zoom Rival D 10",
+        "price": "$48.97",
+        "img_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "page_url": "https://www.nike.com/t/zoom-rival-d-10-track-field-distance-spikes-V32GbO/907566-100"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike Zoom Victory 5 XC",
+        "price": "$110",
+        "img_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "page_url": "https://www.nike.com/t/zoom-victory-5-xc-track-field-distance-spikes-BbCbrq/AJ0847-102"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike Zoom Javelin Elite 3",
+        "price": "$104.97",
+        "img_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "page_url": "https://www.nike.com/t/zoom-javelin-elite-3-track-field-throwing-spikes-sq6fM6/AJ8119-700"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike Air Zoom LJ Elite",
+        "price": "$104.97",
+        "img_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "page_url": "https://www.nike.com/t/air-zoom-lj-elite-track-field-jumping-spikes-mzRDhg/CT0079-700"
+    },
+    {
+        "brand": "nike",
+        "name": "Nike Renew Ride 2",
+        "price": "$54.97",
+        "img_url": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "page_url": "https://www.nike.com/t/renew-ride-2-mens-road-running-shoes-6BNwCj/CU3507-002"
+    }
+]
