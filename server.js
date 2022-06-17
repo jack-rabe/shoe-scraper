@@ -15,7 +15,17 @@ app.get('/', (_req, res) => {
 })
 
 app.get('/data', (_req, res) => {
-	res.json(data);
+	shoes = data['shoes'];
+	shoes = shoes.filter( shoe => {
+		return shoe.brand == 'nike'
+	});
+	result = {
+		'shoes': shoes,
+		'brands': ['nike'],
+		'count': shoes.length 
+	}
+
+	res.render('pages/index', {'data': result});
 })
 
 app.listen(port, () => {

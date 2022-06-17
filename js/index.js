@@ -9,10 +9,3 @@ function filter_by_brand(shoe_array, brand) {
 		el.brand == brand
 	});
 }
-
-
-console.log(document.querySelector('button'));
-const filterButton = document.getElementById('filterBtn')
-filterButton.addEventListener('click', (_e) => {
-	fetch('/data')
-});
