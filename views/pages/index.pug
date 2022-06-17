@@ -1,0 +1,26 @@
+extends ../partials/layout.pug
+include ../mixins/shoe_card.pug
+
+block content
+    h1.text-center Men's Running Shoes
+    // display a sidebar to filter shoes
+    .container.border.border-primary
+      .sidebar-header.text-center Running Shoes
+      form(action='/',).d-flex
+        fieldset.form-group.justify-content-center
+          for brand in data['brands']
+            .form-check.px-3
+              label.form-check-label= brand
+              input.form-check-input(type='checkbox')
+        button(type='submit').btn.btn-primary.btn-sm#filterBtn Filter
+
+    // display all shoes in groups of 4
+    .card-group.m-2
+      - for (let idx = 0; idx < data.count - 1; idx++)
+        - let shoe = data['shoes'][idx]
+        +shoe_card(shoe)
+        - if (idx % 4 == 3 && idx > 0)
+          </div>
+          <div class="card-group">
+      </div>
+

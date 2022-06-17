@@ -12,7 +12,7 @@ for file_name in file_names:
         data = json.load(f)
         combined['count'] += data['count']
         combined['brands'].append(data['brand'])
-        combined['shoes'].append(data['shoes'])
+        combined['shoes'] += (data['shoes'])
 
 with open(f'../data/merged_shoes.json', 'w') as f:
     json.dump(combined, f, indent=4)
