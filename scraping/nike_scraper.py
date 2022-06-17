@@ -26,6 +26,7 @@ def parse_page(html, shoes_array):
         shoe_page_url = card.find('a')['href']
         shoe['page_url'] = shoe_page_url
         # add shoe to list
+        print(shoe)
         shoes_array.append(shoe)
 
 shoes = []
@@ -43,5 +44,10 @@ parsed_page = BeautifulSoup(page, 'html.parser')
 parse_page(parsed_page, shoes)
 
 # write output to json file
-with open('nike_shoes.json', 'w') as f:
-    json.dump(shoes, f, indent=4)
+with open('../data/nike_shoes.json', 'w') as f:
+    output = {
+            'brand': 'nike',
+            'count': len(shoes),
+            'shoes': shoes
+            }
+    json.dump(output, f, indent=4)

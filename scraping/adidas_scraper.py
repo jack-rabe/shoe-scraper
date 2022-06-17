@@ -75,5 +75,10 @@ while True:
 driver.quit()
 
 # write output to json file
-with open('adidas_shoes.json', 'w') as f:
-    json.dump(shoes, f, indent=4)
+with open('../data/adidas_shoes.json', 'w') as f:
+    output = { 
+            'brand' : 'adidas',
+            'count': len(shoes),
+            'shoes': shoes 
+            } 
+    json.dump(output, f, indent=4)
