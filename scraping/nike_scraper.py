@@ -5,6 +5,25 @@ import time
 
 NIKE_URL = 'https://www.nike.com/w/mens-running-shoes-37v7jznik1zy7ok'
 
+def get_page_html(url, driver):
+    driver.get(url)
+    driver.fullscreen_window()
+
+    height = driver.execute_script("return document.body.scrollHeight")
+    position = 700
+    while position < height:
+        driver.execute_script(f'window.scrollTo(0, { position });')
+        time.sleep(3)
+        height = driver.execute_script("return document.body.scrollHeight")
+        position += 700
+    time.sleep(3)
+    page = driver.page_source
+    driver.quit()
+
+    parsed_page = BeautifulSoup(page, 'html.parser')
+    return parsed_page
+
+
 def parse_page(html, shoes_array):
     cards = html.find_all(class_='product-card__body')
 
@@ -26,22 +45,13 @@ def parse_page(html, shoes_array):
         shoe_page_url = card.find('a')['href']
         shoe['page_url'] = shoe_page_url
         # add shoe to list
-        print(shoe)
         shoes_array.append(shoe)
+
 
 shoes = []
 driver = webdriver.Chrome()
-driver.get(NIKE_URL)
-driver.fullscreen_window()
-for i in range(3):
-    time.sleep(5)
-    driver.execute_script(f'window.scrollTo(0, document.body.clientHeight);')
-time.sleep(5)
-page = driver.page_source
-driver.close()
-
-parsed_page = BeautifulSoup(page, 'html.parser')
-parse_page(parsed_page, shoes)
+page = get_page_html(NIKE_URL, driver)
+parse_page(page, shoes)
 
 # write output to json file
 with open('../data/nike_shoes.json', 'w') as f:
