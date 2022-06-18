@@ -7,7 +7,7 @@ const app = express()
 const port = 3000
 
 app.set('view engine', 'pug');
-app.use(express.static(path.resolve(__dirname, 'node_modules/bootswatch/dist/cyborg')));
+app.use(express.static(path.resolve(__dirname, 'node_modules/bootswatch/dist/darkly')));
 app.use(express.static(path.resolve(__dirname, 'images')));
 app.use(express.static(path.resolve(__dirname, 'js')));
 
