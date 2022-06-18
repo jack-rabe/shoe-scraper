@@ -7,14 +7,14 @@ block content
     // display a sidebar to filter shoes
     .container.w-25
       .container.border.border-primary
-        h4.text-center.text-capitalize.mt-2= data['current_brand'] || 'All'
+        h4.text-center.text-capitalize.mt-2 #{data['current_brand'] || 'All'} (#{data['count']})
         form(action='/data').d-flex.flex-column
           fieldset.form-group.justify-content-center
             for brand in data['brands']
               .form-check.p-1.px-4
                 label.form-check-label.text-capitalize= brand
                 input.form-check-input(type='checkbox', id=brand, value=brand name='brand')
-          button(type='submit').btn.btn-primary.btn-sm.m-2#filterBtn Filter 
+          button(type='submit').btn.btn-outline-primary.btn-sm.m-2#filterBtn Filter 
     // display all shoes in groups of 4
     .container
       .card-group.m-2

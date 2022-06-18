@@ -30,8 +30,8 @@ def parse_page(html, shoes_array):
         shoe = { 'brand': 'hoka' }
         # find name of shoe
         name_div = card.find(class_='tile-product-name')
-        shoe_name = name_div.find('a').get_text().replace("Men's", '').strip()
-        shoe['name'] = shoe_name
+        shoe_name = name_div.find('a').get_text()
+        shoe['name'] = shoe_name.replace("Men's", '').replace('All Gender', '').strip()
         # find price of shoe (sale price is listed first)
         price = card.find(class_='sales')
         if price:

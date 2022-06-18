@@ -31,7 +31,7 @@ def parse_page(html, shoes_array):
         shoe = { 'brand': 'nike' }
         # find name of shoe
         shoe_name = card.find(class_='product-card__link-overlay').get_text()
-        shoe['name'] = shoe_name
+        shoe['name'] = shoe_name.replace('Nike', '').strip()
         # find price of shoe (sale price is listed first)
         price = card.find_all(class_='product-price')
         if price:
