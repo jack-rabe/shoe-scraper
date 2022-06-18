@@ -37,6 +37,10 @@ app.get('/data', (req, res) => {
 	res.render('pages/index', {'data': result});
 })
 
+app.get('/about', (req, res) => {
+	res.render('pages/about');
+});
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 })

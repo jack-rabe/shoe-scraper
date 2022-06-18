@@ -1,6 +1,6 @@
 mixin shoe_card(shoe)
-  .card.m-3
+  .card.m-3.border.border-primary
     img.card-img-top(src='shoe.webp', alt='shoe')
     .card-body
       a.card-title(href=shoe.page_url)= shoe.name 
-      p.card-text= shoe.price 
+      p.card-text.mt-2= shoe.price 

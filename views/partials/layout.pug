@@ -4,7 +4,9 @@ html
     title Shoe Scraper
     link(rel='stylesheet', href='bootstrap.css')
     title Running Shoes Scraper
-  body.container
-    block content
+  body
+    include  ../partials/navbar.pug
+    .container
+      block content
     script(src='/index.js')
 
