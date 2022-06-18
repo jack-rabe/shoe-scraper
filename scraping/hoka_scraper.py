@@ -3,11 +3,10 @@ import json
 from selenium import webdriver
 import time
 
-NIKE_URL = 'https://www.nike.com/w/mens-running-shoes-37v7jznik1zy7ok'
+HOKA_URL = 'https://www.hoka.com/en/us/mens-view-all/?sz=10000'
 
 def get_page_html(url, driver):
     driver.get(url)
-    driver.fullscreen_window()
 
     height = driver.execute_script("return document.body.scrollHeight")
     position = 700
@@ -25,43 +24,47 @@ def get_page_html(url, driver):
 
 
 def parse_page(html, shoes_array):
-    cards = html.find_all(class_='product-card__body')
+    cards = html.find_all(class_='product')
 
     for card in cards:
-        shoe = { 'brand': 'nike' }
+        shoe = { 'brand': 'hoka' }
         # find name of shoe
-        shoe_name = card.find(class_='product-card__link-overlay').get_text()
+        name_div = card.find(class_='tile-product-name')
+        shoe_name = name_div.find('a').get_text().replace("Men's", '').strip()
         shoe['name'] = shoe_name
         # find price of shoe (sale price is listed first)
-        price = card.find_all(class_='product-price')
+        price = card.find(class_='sales')
         if price:
-            price_str = price[0].get_text().replace('$', '') 
+            price_str = price.get_text().replace('$', '') 
             try:
                 price = int(price_str)
             except:
                 price = float(price_str)
             shoe['price'] = price
-        else:
-            continue
         # get image src url
         img_url = card.find('img')['src']
         shoe['img_url'] = img_url
         # get url to go to individual shoe page
-        shoe_page_url = card.find('a')['href']
+        shoe_page_url = f"https://hoka.com{name_div.find('a')['href']}"
         shoe['page_url'] = shoe_page_url
-        # add shoe to list
-        shoes_array.append(shoe)
+        # add shoe to list (if it is a running shoe)
+        is_running_shoe = False
+        for purpose in card.find_all(class_='best-for__surface'):
+            if 'run' in purpose.get_text().lower():
+                is_running_shoe = True
+
+        if is_running_shoe: shoes_array.append(shoe)
 
 
 shoes = []
 driver = webdriver.Chrome()
-page = get_page_html(NIKE_URL, driver)
+page = get_page_html(HOKA_URL, driver)
 parse_page(page, shoes)
 
 # write output to json file
-with open('../data/nike_shoes.json', 'w') as f:
+with open('../data/hoka_shoes.json', 'w') as f:
     output = {
-            'brand': 'nike',
+            'brand': 'hoka',
             'count': len(shoes),
             'shoes': shoes
             }

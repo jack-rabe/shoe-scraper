@@ -42,7 +42,12 @@ def parse_page(html, shoes_array):
         # find price of shoe (the sale price is always listed last)
         price = card.find_all(class_='gl-price-item')
         if price:
-            shoe['price'] = price[-1].get_text() 
+            price_str = price[-1].get_text().replace('$', '')
+            try:
+                price = int(price_str)
+            except:
+                price = float(price_str)
+            shoe['price'] = price
         else:
             continue
         # get image src url
