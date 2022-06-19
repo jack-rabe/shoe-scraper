@@ -1,6 +1,6 @@
 import json
 
-file_names = ['adidas_shoes.json', 'nike_shoes.json', 'hoka_shoes.json']
+file_names = ['adidas_shoes.json', 'nike_shoes.json', 'hoka_shoes.json', 'new_balance_shoes.json']
 combined = {
         'brands': [],
         'count': 0,

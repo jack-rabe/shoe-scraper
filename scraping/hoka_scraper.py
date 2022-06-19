@@ -1,27 +1,8 @@
 from bs4 import BeautifulSoup
-import json
 from selenium import webdriver
-import time
+from utils import get_page_html, write_output
 
 HOKA_URL = 'https://www.hoka.com/en/us/mens-view-all/?sz=10000'
-
-def get_page_html(url, driver):
-    driver.get(url)
-
-    height = driver.execute_script("return document.body.scrollHeight")
-    position = 700
-    while position < height:
-        driver.execute_script(f'window.scrollTo(0, { position });')
-        time.sleep(3)
-        height = driver.execute_script("return document.body.scrollHeight")
-        position += 700
-    time.sleep(3)
-    page = driver.page_source
-    driver.quit()
-
-    parsed_page = BeautifulSoup(page, 'html.parser')
-    return parsed_page
-
 
 def parse_page(html, shoes_array):
     cards = html.find_all(class_='product')
@@ -60,12 +41,4 @@ shoes = []
 driver = webdriver.Chrome()
 page = get_page_html(HOKA_URL, driver)
 parse_page(page, shoes)
-
-# write output to json file
-with open('../data/hoka_shoes.json', 'w') as f:
-    output = {
-            'brand': 'hoka',
-            'count': len(shoes),
-            'shoes': shoes
-            }
-    json.dump(output, f, indent=4)
+write_output('hoka', shoes)
