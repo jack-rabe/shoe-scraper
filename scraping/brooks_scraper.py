@@ -24,10 +24,13 @@ def parse_page(html, shoes_array):
         else:
             continue
         # get image src url
-        img_url = card.find(class_='a-responsive-image__img')['src']
-        if 'http' not in img_url:
-            img_url = f'https://www.brooksrunning.com/dw/image/v2/BGPF_PRD{img_url}'
-        shoe['img_url'] = img_url
+        img_urls = card.find_all('img')
+        for url in img_urls:
+            url_src = url['src']
+            if 'http' in url_src and 'award' not in url_src:
+                shoe['img_url'] = url_src
+                break
+
         # get url to go to individual shoe page
         shoe_page_url = card.find('a')['href']
         shoe['page_url'] = f'https://brooksrunning.com{shoe_page_url}'
