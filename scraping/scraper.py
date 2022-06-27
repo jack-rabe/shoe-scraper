@@ -4,12 +4,11 @@ from selenium import webdriver
 from bs4 import BeautifulSoup
 
 class Scraper:
-    def __init__(self, brand_name, url, card_class, name_class, img_class, page_class, price_class):
+    def __init__(self, brand_name, url, card_class, name_class, price_class, price_idx):
         self.brand_name = brand_name
         self.url = url
         self.card_class = card_class
         self.name_class = name_class 
-        self.page_class = price_class
         self.price_class = price_class
         self.price_idx = price_idx
 
