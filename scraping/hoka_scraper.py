@@ -1,44 +1,35 @@
-from bs4 import BeautifulSoup
-from selenium import webdriver
-from utils import get_page_html, write_output
+from scraper import Scraper
 
 HOKA_URL = 'https://www.hoka.com/en/us/mens-view-all/?sz=10000'
 
-def parse_page(html, shoes_array):
-    cards = html.find_all(class_='product')
-
-    for card in cards:
-        shoe = { 'brand': 'hoka' }
-        # find name of shoe
+class HokaScraper(Scraper):
+    def get_shoe_name(self, card, shoe):
         name_div = card.find(class_='tile-product-name')
         shoe_name = name_div.find('a').get_text()
         shoe['name'] = shoe_name.replace("Men's", '').replace('All Gender', '').strip()
-        # find price of shoe (sale price is listed first)
-        price = card.find(class_='sales')
-        if price:
-            price_str = price.get_text().replace('$', '') 
-            try:
-                price = int(price_str)
-            except:
-                price = float(price_str)
-            shoe['price'] = price
-        # get image src url
-        img_url = card.find('img')['src']
-        shoe['img_url'] = img_url
-        # get url to go to individual shoe page
-        shoe_page_url = f"https://hoka.com{name_div.find('a')['href']}"
-        shoe['page_url'] = shoe_page_url
-        # add shoe to list (if it is a running shoe)
+
+    def is_running_shoe(self, card):
         is_running_shoe = False
         for purpose in card.find_all(class_='best-for__surface'):
             if 'run' in purpose.get_text().lower():
                 is_running_shoe = True
+        return is_running_shoe
 
-        if is_running_shoe: shoes_array.append(shoe)
+    def get_img_url(self, card, shoe):
+        name_div = card.find(class_='tile-product-name')
+        shoe_page_url = f"https://hoka.com{name_div.find('a')['href']}"
+        shoe['page_url'] = shoe_page_url
+
+    def get_page_url(self, card, shoe):
+        shoe_page_url = card.find('a')['href']
+        shoe['page_url'] = f'https://hoka.com{shoe_page_url}'
 
 
-shoes = []
-driver = webdriver.Chrome()
-page = get_page_html(HOKA_URL, driver)
-parse_page(page, shoes)
-write_output('hoka', shoes)
+scraper = HokaScraper(
+        brand_name = 'hoka',
+        url = HOKA_URL,
+        card_class = 'product',
+        name_class = '',
+        price_class = 'sales',
+        price_idx = 0
+        ).scrape()

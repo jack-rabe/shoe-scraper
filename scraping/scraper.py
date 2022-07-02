@@ -68,6 +68,10 @@ class Scraper:
             shoe['price'] = price
 
 
+    def is_running_shoe(self, _card):
+        return True
+
+
     def parse_page(self, html):
         cards = self.get_cards(html)
 
@@ -79,7 +83,7 @@ class Scraper:
             self.get_page_url(card, shoe)
             self.get_price(card, shoe, )
             # append final shoe to list
-            self.shoes.append(shoe)
+            if self.is_running_shoe(card): self.shoes.append(shoe) 
 
 
     def write_output(self):
