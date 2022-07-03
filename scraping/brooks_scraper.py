@@ -1,4 +1,3 @@
-from bs4 import BeautifulSoup
 from scraper import Scraper
 
 BROOKS_URL = "https://www.brooksrunning.com/en_us/all-mens-running-shoes/"

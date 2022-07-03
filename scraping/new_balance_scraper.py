@@ -1,4 +1,3 @@
-from bs4 import BeautifulSoup
 from scraper import Scraper
 
 NB_URL = "https://www.newbalance.com/men/shoes/running/?start=0&sz=10000"

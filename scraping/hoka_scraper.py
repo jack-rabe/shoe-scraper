@@ -16,14 +16,10 @@ class HokaScraper(Scraper):
                 is_running_shoe = True
         return is_running_shoe
 
-    def get_img_url(self, card, shoe):
+    def get_page_url(self, card, shoe):
         name_div = card.find(class_="tile-product-name")
         shoe_page_url = f"https://hoka.com{name_div.find('a')['href']}"
         shoe["page_url"] = shoe_page_url
-
-    def get_page_url(self, card, shoe):
-        shoe_page_url = card.find("a")["href"]
-        shoe["page_url"] = f"https://hoka.com{shoe_page_url}"
 
 
 scraper = HokaScraper(
