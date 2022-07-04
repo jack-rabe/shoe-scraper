@@ -15,29 +15,36 @@ app.use(express.static(path.resolve(__dirname, 'js')));
 app.use(express.json());
 
 app.get('/', (_req, res) => {
+	data.shoes.sort( (a, b) => {
+		return a.price - b.price;
+	});
 	res.render('pages/index', {
 		'data': data,
 	});
 })
 
 app.get('/data', (req, res) => {
-	shoes = data['shoes'];
-	brand = req.query.brand;
+	let shoes = data['shoes'];
+	let selectedBrands = req.query.brand;
+  // ensure selectedBrands is an array
+  if (typeof selectedBrands == 'string')
+    selectedBrands = [selectedBrands]
+  // split the selected brands w/ a space + comma
+  prettyBrandsStr = selectedBrands.join(', ')
 
 	shoes = shoes.filter( shoe => {
-		return shoe.brand == brand; 
+		return selectedBrands.includes(shoe.brand); 
 	});
 	result = {
 		'shoes': shoes,
 		'brands': data.brands,
-		'current_brand': brand,
+		'current_brand': prettyBrandsStr,
 		'count': shoes.length 
 	}
-
 	res.render('pages/index', {'data': result});
 })
 
-app.get('/about', (req, res) => {
+app.get('/about', (_req, res) => {
 	res.render('pages/about');
 });
 
