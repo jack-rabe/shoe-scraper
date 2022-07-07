@@ -1,11 +1,10 @@
-function sort_by_price(shoe_array) {
-	shoe_array.sort( (a, b) => {
-		a.price < b.price
-	});
+function setActiveLink() {
+  const aboutLink = document.getElementById('about-link')
+  const homeLink = document.getElementById('home-link')
+  const current_path = window.location.href.split('/').pop() // get the final part of the url path
+
+  if (current_path.includes('about')) aboutLink.classList.toggle('active')
+  else homeLink.classList.toggle('active')
 }
 
-function filter_by_brand(shoe_array, brand) {
-	shoe_array.filter( (el) => {
-		el.brand == brand
-	});
-}
+setActiveLink()
