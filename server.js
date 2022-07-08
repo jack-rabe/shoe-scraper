@@ -25,6 +25,18 @@ app.get('/', (_req, res) => {
   })
 })
 
+app.get('/some', (req, res) => {
+  const start = parseInt(req.query.start)
+  let some_shoes = data.shoes.slice(start, start + 100)
+  result = {
+    shoes: some_shoes,
+    brands: data.brands,
+    count: some_shoes.length,
+    total_count: data.shoes.length,
+  }
+  res.render('pages/index', { data: result })
+})
+
 app.get('/data', (req, res) => {
   let shoes = data['shoes']
   let selectedBrands = req.query.brand

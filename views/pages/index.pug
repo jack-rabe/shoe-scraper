@@ -18,11 +18,23 @@ block content
     // display all shoes in groups of 4
     .container
       .card-group.m-2
-        - for (let idx = 0; idx < data.count - 1; idx++)
+        - for (let idx = 0; idx < data.count; idx++)
           - let shoe = data['shoes'][idx]
           +shoe_card(shoe)
           - if (idx % 4 == 3 && idx > 0)
             </div>
             <div class="card-group">
         </div>
-
+    // pagination
+    - const total_num_shoes = data['total_count'] || data['count']
+    - const num_pages = Math.ceil(total_num_shoes / 100)
+    - let pageNumber = 1
+  .nav.d-flex.justify-content-center.m-3
+    li.page-item
+      a#page-back.page-link.border.border-dark <<
+    while pageNumber <= num_pages
+      li.page-item.border.border-dark
+        a.page-link.specific-link= pageNumber
+      - pageNumber++
+    li.page-item
+      a#page-forward.page-link.border.border-dark >>
