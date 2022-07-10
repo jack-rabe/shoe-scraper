@@ -6,6 +6,7 @@ file_names = [
     "hoka_shoes.json",
     "new_balance_shoes.json",
     "brooks_shoes.json",
+    "saucony_shoes.json",
 ]
 combined = {
     "brands": [],

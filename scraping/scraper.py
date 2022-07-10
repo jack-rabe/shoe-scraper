@@ -18,10 +18,22 @@ class Scraper:
         self.driver = webdriver.Chrome()
 
     def get_page_html(self):
-        driver = self.driver
+        self.setup_driver()
+        self.scroll_to_bottom()
 
-        driver.get(self.url)
-        driver.fullscreen_window()
+        time.sleep(3)
+        page = self.driver.page_source
+        self.driver.quit()
+
+        parsed_page = BeautifulSoup(page, "html.parser")
+        return parsed_page
+
+    def setup_driver(self):
+        self.driver.get(self.url)
+        self.driver.fullscreen_window()
+
+    def scroll_to_bottom(self):
+        driver = self.driver
 
         height = driver.execute_script("return document.body.scrollHeight")
         position = 700
@@ -30,12 +42,6 @@ class Scraper:
             time.sleep(3)
             height = driver.execute_script("return document.body.scrollHeight")
             position += 700
-        time.sleep(3)
-        page = driver.page_source
-        driver.quit()
-
-        parsed_page = BeautifulSoup(page, "html.parser")
-        return parsed_page
 
     def get_cards(self, html):
         return html.find_all(class_=self.card_class)
@@ -55,13 +61,12 @@ class Scraper:
     # sometimes there are multiple prices during a sale (so specify an index)
     def get_price(self, card, shoe):
         price = card.find_all(class_=self.price_class)
-        if price:
-            price_str = price[self.price_idx].get_text().replace("$", "")
-            try:
-                price = int(price_str)
-            except:
-                price = float(price_str)
-            shoe["price"] = price
+        price_str = price[self.price_idx].get_text().replace("$", "")
+        try:
+            price = int(price_str)
+        except:
+            price = float(price_str)
+        shoe["price"] = price
 
     def is_running_shoe(self, _card):
         return True
