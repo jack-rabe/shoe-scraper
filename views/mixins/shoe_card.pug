@@ -1,6 +1,8 @@
 mixin shoe_card(shoe)
-  .card.m-1.border.border-primary
-    img.card-img-top.p-3(src=shoe.img_url, alt='shoe')
+  .card.m-1.border.border-light
+    // color brooks shoes with a white background because otherwise the shoe won't pop
+    .container.d-flex.justify-content-center.bg-primary
+      img.card-img-top.m-3(src=shoe.img_url, alt='shoe', class=(shoe.brand == 'brooks') ? 'bg-white' : '')
     .card-body.text-center
       a.card-title.mx-auto.d-inline(href=shoe.page_url)= shoe.name 
       .container.d-flex.justify-content-around
