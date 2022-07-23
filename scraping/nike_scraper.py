@@ -8,6 +8,9 @@ class NikeScraper(Scraper):
         shoe_name = card.find(class_="product-card__link-overlay").get_text()
         shoe["name"] = shoe_name.replace("Nike", "").strip()
 
+    def get_img_url(self, card, shoe):
+        shoe["img_url"] = card.find("img")["srcset"].split(" ")[0]
+
 
 scraper = NikeScraper(
     brand_name="nike",

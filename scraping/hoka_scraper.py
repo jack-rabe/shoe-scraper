@@ -7,7 +7,8 @@ class HokaScraper(Scraper):
     def get_shoe_name(self, card, shoe):
         name_div = card.find(class_="tile-product-name")
         shoe_name = name_div.find("a").get_text()
-        shoe["name"] = shoe_name.replace("Men's", "").replace("All Gender", "").strip()
+        shoe_name = shoe_name.replace("Men's", "").replace("All Gender", "")
+        shoe["name"] = shoe_name.strip()
 
     def is_running_shoe(self, card):
         is_running_shoe = False

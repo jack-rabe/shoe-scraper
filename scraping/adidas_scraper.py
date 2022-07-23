@@ -29,7 +29,7 @@ def parse_shoe_count(html):
 
 
 def parse_page(html, shoes_array):
-    cards = html.find_all(class_="glass-product-card-container", recursive=True)
+    cards = html.find_all(class_="glass-product-card-container")
 
     for card in cards:
         shoe = {"brand": "adidas"}
@@ -38,14 +38,15 @@ def parse_page(html, shoes_array):
         if shoe_name:
             shoe["name"] = shoe_name.get_text()
         else:
-            shoe["name"] = card.find(class_="glass-product-card__details").get_text()
+            shoe_name = card.find(class_="glass-product-card__details")
+            shoe["name"] = shoe_name.get_text()
         # find price of shoe (the sale price is always listed last)
         price = card.find_all(class_="gl-price-item")
         if price:
             price_str = price[-1].get_text().replace("$", "")
             try:
                 price = int(price_str)
-            except:
+            except Exception as e:
                 price = float(price_str)
             shoe["price"] = price
         else:

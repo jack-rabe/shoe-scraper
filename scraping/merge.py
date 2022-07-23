@@ -21,5 +21,5 @@ for file_name in file_names:
         combined["brands"].append(data["brand"])
         combined["shoes"] += data["shoes"]
 
-with open(f"../data/merged_shoes.json", "w") as f:
+with open("../data/merged_shoes.json", "w") as f:
     json.dump(combined, f, indent=4)
