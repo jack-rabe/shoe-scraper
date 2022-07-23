@@ -7,16 +7,16 @@ function enablePageNavigation() {
 
   nextPage.onclick = () => {
     const startIdx = getCurrentStart() + 100
-    window.location.href = `/some?start=${startIdx}`
+    window.location.href = `/someBrands?start=${startIdx}`
   }
   previousPage.onclick = () => {
     const startIdx = getCurrentStart() - 100
-    window.location.href = `/some?start=${startIdx}`
+    window.location.href = `/someBrands?start=${startIdx}`
   }
 
   let specificStartIdx = 0
   for (const link of specificLinks) {
-    link.href = `/some?start=${specificStartIdx}`
+    link.href = `/someBrands?start=${specificStartIdx}`
     specificStartIdx += 100
   }
 }
@@ -41,5 +41,22 @@ function setActiveLink() {
   else homeLink.classList.toggle('active')
 }
 
+// add invisible cards to keep cards in the final row at a normal size
+function normalizeFinalRow() {
+  const x = document.querySelectorAll('.card-group')
+  const lastGroup = x[x.length - 1]
+  let num_cards = lastGroup.querySelectorAll('.card').length
+  while (num_cards < 4) {
+    const new_node = document.createElement('div')
+    new_node.classList.add('card')
+    new_node.classList.add('m-1')
+    new_node.style.backgroundColor = 'var(--bs-body-bg)'
+    new_node.style.border = 'none'
+    lastGroup.appendChild(new_node)
+    num_cards++
+  }
+}
+
 setActiveLink()
 enablePageNavigation()
+normalizeFinalRow()
