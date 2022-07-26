@@ -3,7 +3,9 @@ const router = express.Router()
 
 router.get('/', (req, res) => {
   const data = require('../data/merged_shoes.json')
-  const start = parseInt(req.query.start)
+  let start = parseInt(req.query.start)
+  // start at 0 index by default
+  if (!start) start = 0
   let some_shoes = data.shoes.slice(start, start + 100)
   const result = {
     shoes: some_shoes,

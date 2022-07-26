@@ -7,16 +7,16 @@ function enablePageNavigation() {
 
   nextPage.onclick = () => {
     const startIdx = getCurrentStart() + 100
-    window.location.href = `/someBrands?start=${startIdx}`
+    window.location.href = `/?start=${startIdx}`
   }
   previousPage.onclick = () => {
     const startIdx = getCurrentStart() - 100
-    window.location.href = `/someBrands?start=${startIdx}`
+    window.location.href = `/?start=${startIdx}`
   }
 
   let specificStartIdx = 0
   for (const link of specificLinks) {
-    link.href = `/someBrands?start=${specificStartIdx}`
+    link.href = `/?start=${specificStartIdx}`
     specificStartIdx += 100
   }
 }
