@@ -1,7 +1,7 @@
 const express = require('express')
 const router = express.Router()
 
-router.get('/', (req, res) => {
+router.get('/', (req, res, next) => {
   const data = require('../data/merged_shoes.json')
   let shoes = data['shoes']
   let selectedBrands = req.query.brand
@@ -19,7 +19,9 @@ router.get('/', (req, res) => {
     current_brand: prettyBrandsStr,
     count: shoes.length,
   }
-  res.render('../views/pages/index', { data: result })
+
+  res.locals.shoeData = result
+  next()
 })
 
 module.exports = router

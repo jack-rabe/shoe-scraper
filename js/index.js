@@ -7,28 +7,32 @@ function enablePageNavigation() {
 
   nextPage.onclick = () => {
     const startIdx = getCurrentStart() + 100
-    window.location.href = `/?start=${startIdx}`
+    const queryString = new URLSearchParams(window.location.search)
+    queryString.set('start', startIdx)
+    window.location.search = queryString.toString()
   }
   previousPage.onclick = () => {
     const startIdx = getCurrentStart() - 100
-    window.location.href = `/?start=${startIdx}`
+    const queryString = new URLSearchParams(window.location.search)
+    queryString.set('start', startIdx)
+    window.location.search = queryString.toString()
   }
 
   let specificStartIdx = 0
+  const queryString = new URLSearchParams(window.location.search)
   for (const link of specificLinks) {
-    link.href = `/?start=${specificStartIdx}`
+    queryString.set('start', specificStartIdx)
+    link.href = `?${queryString.toString()}`
     specificStartIdx += 100
   }
 }
 
 // get the start index of the current page of shoes from the url
 function getCurrentStart() {
-  const url = window.location.href
-  const target = 'start='
-  const start_idx = url.indexOf(target)
-  let start_value = url.substring(start_idx + target.length)
-
-  return parseInt(start_value)
+  const queryString = new URLSearchParams(window.location.search)
+  let startIdx = parseInt(queryString.get('start'))
+  if (isNaN(startIdx)) startIdx = 0
+  return startIdx
 }
 
 // display which page the user is currently on in the navbar
