@@ -23,6 +23,7 @@ app.use(express.json())
 app.use('/', homeRoute)
 app.use('/about', aboutRoute)
 app.use('/brands', brandsRoute)
+// render page w/ 100 shoes per page
 app.use(renderPage)
 
 app.listen(port, () => {

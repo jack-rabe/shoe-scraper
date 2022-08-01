@@ -4,9 +4,17 @@ function enablePageNavigation() {
   const previousPage = document.getElementById('page-back')
   // all links to a specific shoe page (e.g. page 1 or page 10)
   const specificLinks = document.querySelectorAll('.specific-link')
+  const shoeNumberTag = document.getElementById('shoe_number')
+  const numberShoes = parseInt(shoeNumberTag.textContent.match('\\d+')[0])
+
+  if (getCurrentStart() + 100 > numberShoes)
+    nextPage.parentNode.classList.add('disabled')
+  if (getCurrentStart() - 100 < 0)
+    previousPage.parentNode.classList.add('disabled')
 
   nextPage.onclick = () => {
     const startIdx = getCurrentStart() + 100
+    // disable link if on the first page
     const queryString = new URLSearchParams(window.location.search)
     queryString.set('start', startIdx)
     window.location.search = queryString.toString()
@@ -20,9 +28,12 @@ function enablePageNavigation() {
 
   let specificStartIdx = 0
   const queryString = new URLSearchParams(window.location.search)
+  const startIdx = parseInt(queryString.get('start'))
   for (const link of specificLinks) {
     queryString.set('start', specificStartIdx)
     link.href = `?${queryString.toString()}`
+    // show which page is currently selected
+    if (startIdx == specificStartIdx) link.parentNode.classList.add('active')
     specificStartIdx += 100
   }
 }

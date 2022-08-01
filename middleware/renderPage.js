@@ -12,6 +12,7 @@ router.use((req, res) => {
     brands: shoeData.brands,
     count: someShoes.length,
     total_count: shoeData.shoes.length,
+    current_brand: shoeData.current_brand || 'All',
   }
   res.render('../views/pages/index', { data: result })
 })
