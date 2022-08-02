@@ -5,8 +5,8 @@ router.use((req, res) => {
   const shoeData = res.locals.shoeData
   let start = parseInt(req.query.start)
   // start at 0 index by default
-  if (!start) start = 0
-  const someShoes = shoeData.shoes.slice(start, start + 100)
+  if (!start || isNaN(start)) start = 0
+  const someShoes = shoeData.shoes.slice(start, start + 52)
   const result = {
     shoes: someShoes,
     brands: shoeData.brands,
@@ -14,6 +14,7 @@ router.use((req, res) => {
     total_count: shoeData.shoes.length,
     current_brand: shoeData.current_brand || 'All',
   }
+
   res.render('../views/pages/index', { data: result })
 })
 

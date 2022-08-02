@@ -7,20 +7,20 @@ function enablePageNavigation() {
   const shoeNumberTag = document.getElementById('shoe_number')
   const numberShoes = parseInt(shoeNumberTag.textContent.match('\\d+')[0])
 
-  if (getCurrentStart() + 100 > numberShoes)
+  if (getCurrentStart() + 52 > numberShoes)
     nextPage.parentNode.classList.add('disabled')
-  if (getCurrentStart() - 100 < 0)
+  if (getCurrentStart() - 52 < 0)
     previousPage.parentNode.classList.add('disabled')
 
   nextPage.onclick = () => {
-    const startIdx = getCurrentStart() + 100
+    const startIdx = getCurrentStart() + 52
     // disable link if on the first page
     const queryString = new URLSearchParams(window.location.search)
     queryString.set('start', startIdx)
     window.location.search = queryString.toString()
   }
   previousPage.onclick = () => {
-    const startIdx = getCurrentStart() - 100
+    const startIdx = getCurrentStart() - 52
     const queryString = new URLSearchParams(window.location.search)
     queryString.set('start', startIdx)
     window.location.search = queryString.toString()
@@ -28,13 +28,14 @@ function enablePageNavigation() {
 
   let specificStartIdx = 0
   const queryString = new URLSearchParams(window.location.search)
-  const startIdx = parseInt(queryString.get('start'))
+  let startIdx = parseInt(queryString.get('start'))
+  if (isNaN(startIdx)) startIdx = 0
   for (const link of specificLinks) {
     queryString.set('start', specificStartIdx)
     link.href = `?${queryString.toString()}`
     // show which page is currently selected
     if (startIdx == specificStartIdx) link.parentNode.classList.add('active')
-    specificStartIdx += 100
+    specificStartIdx += 52
   }
 }
 

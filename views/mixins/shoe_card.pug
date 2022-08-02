@@ -1,10 +1,10 @@
 mixin shoe_card(shoe)
-  .card.m-1.border.border-light
+  .card.m-1.border.border-dark
     // color brooks shoes with a white background because otherwise the shoe won't pop
     .container.d-flex.justify-content-center.bg-primary
       img.card-img-top.m-3(src=shoe.img_url, alt='shoe', class=(shoe.brand == 'brooks') ? 'bg-white' : '')
-    .card-body.text-center
+    .card-body.text-center.p-1
       a.card-title.mx-auto.d-inline(href=shoe.page_url)= shoe.name 
       .container.d-flex.justify-content-around
-        p.card-text.mt-2 $#{shoe.price} 
-        p.card-text.mt-2.text-capitalize= shoe.brand
+        p.card-text.m-1 $#{shoe.price} 
+        p.card-text.text-capitalize.m-1= shoe.brand

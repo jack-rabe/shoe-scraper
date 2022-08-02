@@ -3,6 +3,8 @@ include ../mixins/shoe_card.pug
 
 
 block content
+  style.
+   h1 { font-size: 80px }
   - const total_num_shoes = data['total_count'] || data['count']
 
   h1.text-center.m-2 Men's Running Shoes
@@ -11,12 +13,23 @@ block content
     .container.w-25
       .container.border.border-primary.border-4
         h4.text-center.text-capitalize.mt-2#shoe_number #{data['current_brand']} (#{total_num_shoes})
+        hr
         form(action='/brands').d-flex.flex-column
           fieldset.form-group.justify-content-center
             for brand in data['brands']
               .form-check.p-1.px-4
                 label.form-check-label.text-capitalize= brand
                 input.form-check-input(type='checkbox', id=brand, value=brand name='brand')
+          hr
+          .h4.text-center Sort
+          .d-flex
+            input.form-check-input.m-2(type="radio", name="sort", id="low", value="low", checked)
+            label.form-check-label.m-2(for='low')
+              low -> high
+            input.form-check-input.m-2(type="radio", name="sort", id="high", value="high")
+            label.form-check-label.m-2(for='high')
+              high -> low
+          hr
           button(type='submit').btn.btn-outline-primary.btn-sm.m-2#filterBtn Filter 
     // display all shoes in groups of 4
     .container
@@ -29,7 +42,7 @@ block content
             <div class="card-group">
         </div>
     // pagination
-    - const num_pages = Math.ceil(total_num_shoes / 100)
+    - const num_pages = Math.ceil(total_num_shoes / 52)
     - let pageNumber = 1
   .nav.d-flex.justify-content-center.m-3
     li.page-item
