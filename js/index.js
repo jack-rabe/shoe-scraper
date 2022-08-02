@@ -73,6 +73,32 @@ function normalizeFinalRow() {
   }
 }
 
+// keep track of sidebar high -> low vs. low -> high sort
+function checkActiveFilters() {
+  const lowSortRadio = document.getElementById('low')
+  const highSortRadio = document.getElementById('high')
+  const sortDirection = window.localStorage.getItem('sort') || 'low'
+
+  if (sortDirection === 'low') lowSortRadio.checked = true
+  else highSortRadio.checked = true
+  lowSortRadio.onclick = () => {
+    window.localStorage.setItem('sort', 'low')
+  }
+  highSortRadio.onclick = () => {
+    window.localStorage.setItem('sort', 'high')
+  }
+
+  // keep track of selected brands
+  const brandCheckboxes = document.querySelectorAll('input[type=checkbox]')
+  const queryString = new URLSearchParams(window.location.search)
+  const activeBrands = queryString.getAll('brand')
+  console.log(activeBrands)
+  brandCheckboxes.forEach((box) => {
+    if (activeBrands.includes(box.id)) box.checked = true
+  })
+}
+
+checkActiveFilters()
 setActiveLink()
 enablePageNavigation()
 normalizeFinalRow()

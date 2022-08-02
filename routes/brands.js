@@ -7,6 +7,7 @@ router.get('/', (req, res, next) => {
   let selectedBrands = req.query.brand
   // ensure selectedBrands is an array
   if (typeof selectedBrands == 'string') selectedBrands = [selectedBrands]
+  else if (!selectedBrands) selectedBrands = data['brands']
   // split the selected brands w/ a space + comma
   const prettyBrandsStr = selectedBrands.join(', ')
 

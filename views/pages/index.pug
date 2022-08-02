@@ -20,18 +20,19 @@ block content
             input.form-check-input(type='checkbox', id=brand, value=brand name='brand')
       hr
       .h4.text-center Sort
-      .d-flex
-        input.form-check-input.m-2(type="radio", name="sort", id="low", value="low", checked)
-        label.form-check-label.m-2(for='low')
+      .form-check
+        input.form-check-input.m-2(type="radio", name="sort", id="low", value="low")
+        label.form-check-label.m-2(for='low').
           low -> high
+      .form-check
         input.form-check-input.m-2(type="radio", name="sort", id="high", value="high")
-        label.form-check-label.m-2(for='high')
+        label.form-check-label.m-2(for='high').
           high -> low
       hr
-      button(type='submit').btn.btn-outline-primary.btn-sm.m-2#filterBtn Filter 
+      button(type='submit').btn.btn-outline-primary.btn-sm.m-2.fs-5#filterBtn Filter 
   // display all shoes in groups of 4
   .container
-    .card-group.m-2
+    .card-group
       - for (let idx = 0; idx < data.count; idx++)
         - let shoe = data['shoes'][idx]
         +shoe_card(shoe)
