@@ -3,7 +3,7 @@ mixin shoe_card(shoe)
     // color brooks shoes with a white background because otherwise the shoe won't pop
     .container.d-flex.justify-content-center.bg-primary
       - const uglyBrands = ['brooks', 'saucony']
-      img.card-img-top.m-3(src=shoe.img_url, alt='shoe', class=(uglyBrands.includes(shoe.brand) ? 'bg-white' : ''))
+      img.card-img-top.m-3(src=shoe.img_url, alt='shoe', class=(uglyBrands.includes(shoe.brand) ? 'bg-white' : '') loading='lazy')
     .card-body.text-center.p-1
       a.card-title.mx-auto.d-inline(href=shoe.page_url)= shoe.name 
       .container.d-flex.justify-content-around
