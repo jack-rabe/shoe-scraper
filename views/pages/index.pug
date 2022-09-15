@@ -5,12 +5,13 @@ include ../mixins/shoe_card.pug
 block content
   style.
    h1 { font-size: 50px }
+
   - const total_num_shoes = data['total_count'] || data['count']
 
   h1.text-center.m-3 Men's Running Shoes
   include ../partials/sidebar.pug
   // display all shoes in groups of 4
-  .container
+  .container.w-75
     .card-group
       - for (let idx = 0; idx < data.count; idx++)
         - let shoe = data['shoes'][idx]
