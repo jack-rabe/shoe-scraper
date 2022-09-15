@@ -8,28 +8,7 @@ block content
   - const total_num_shoes = data['total_count'] || data['count']
 
   h1.text-center.m-3 Men's Running Shoes
-  // display a sidebar to filter shoes (the sidebar is fixed to the top left w/ position-fixed.top-1.start-0.m-3(style={width: 200}))
-  .container.border.border-primary.border-4#sidebar.position-fixed.top-1.start-0.m-3(style={width: 200})
-    h4.text-center.text-capitalize.mt-2#shoe_number #{data['current_brand']} (#{total_num_shoes})
-    hr
-    form(action='/brands').d-flex.flex-column
-      fieldset.form-group.justify-content-center
-        for brand in data['brands']
-          .form-check.p-1.px-4
-            label.form-check-label.text-capitalize= brand
-            input.form-check-input(type='checkbox', id=brand, value=brand name='brand')
-      hr
-      .h4.text-center Sort
-      .form-check
-        input.form-check-input.m-2(type="radio", name="sort", id="low", value="low")
-        label.form-check-label.m-2(for='low').
-          low -> high
-      .form-check
-        input.form-check-input.m-2(type="radio", name="sort", id="high", value="high")
-        label.form-check-label.m-2(for='high').
-          high -> low
-      hr
-      button(type='submit').btn.btn-outline-primary.btn-sm.m-2.fs-5#filterBtn Filter 
+  include ../partials/sidebar.pug
   // display all shoes in groups of 4
   .container
     .card-group
