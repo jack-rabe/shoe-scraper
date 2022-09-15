@@ -92,7 +92,6 @@ function checkActiveFilters() {
   const brandCheckboxes = document.querySelectorAll('input[type=checkbox]')
   const queryString = new URLSearchParams(window.location.search)
   const activeBrands = queryString.getAll('brand')
-  console.log(activeBrands)
   brandCheckboxes.forEach((box) => {
     if (activeBrands.includes(box.id)) box.checked = true
   })
