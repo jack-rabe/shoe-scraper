@@ -35,4 +35,3 @@ cd ..
 npm run start
 ```
 - navigate to localhost:3000 to view the website
-
